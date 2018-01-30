@@ -109,7 +109,7 @@ public class Main extends JFrame
 	
 	public void paint (Graphics g)
 	{
-		ImageIcon first__bg = new ImageIcon(new ImageIcon("cta.png")
+		ImageIcon first__bg = new ImageIcon(new ImageIcon("asset/cta.png")
 				.getImage().getScaledInstance(1100, 400, java.awt.Image.SCALE_SMOOTH));
 		first__bg.paintIcon(this, g, 0, 120);
 		g.setColor(Color.black);

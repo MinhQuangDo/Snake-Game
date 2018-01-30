@@ -145,14 +145,14 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 			{
 				if (x == 0 || x == 975)
 				{
-					ImageIcon obs = new ImageIcon("bush.png");
+					ImageIcon obs = new ImageIcon("asset/bush.png");
 					obs.paintIcon(this, g, x, y);
 				}
 				else 
 				{
 					if (y == 0 || y == 700)
 					{
-						ImageIcon obs = new ImageIcon("bush.png");
+						ImageIcon obs = new ImageIcon("asset/bush.png");
 						obs.paintIcon(this, g, x, y);
 					}
 		
@@ -188,21 +188,21 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 		
 		for (int o = 0; o < obs__randomNum; o++)
 		{		
-			ImageIcon obs = new ImageIcon("bush.png");
+			ImageIcon obs = new ImageIcon("asset/bush.png");
 			obs.paintIcon(this, g, object__x__pos[obj__obs__x.get(o)], object__y__pos[obj__obs__y.get(o)]);
 
 		
 		}
 		
 		//this is score content
-		ImageIcon score__obj = new ImageIcon(new ImageIcon("enemy.png")
+		ImageIcon score__obj = new ImageIcon(new ImageIcon("asset/enemy.png")
 				.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
 		score__obj.paintIcon(this, g, 1020, 20);
 		g.setColor(Color.WHITE);
 		g.setFont(new Font("arial", Font.PLAIN, 20));
 		g.drawString(""+score, 1060, 40);
 		
-		ImageIcon high__score__obj = new ImageIcon(new ImageIcon("trophy.png")
+		ImageIcon high__score__obj = new ImageIcon(new ImageIcon("asset/trophy.png")
 				.getImage().getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH));
 		high__score__obj.paintIcon(this, g, 1018, 80);
 		if (highest__score < score)
@@ -215,7 +215,7 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 		g.drawString("to exit", 1023, 670);
 		
 		
-		snake__right__mouth = new ImageIcon(new ImageIcon("snake_right_mouth.png")
+		snake__right__mouth = new ImageIcon(new ImageIcon("asset/snake_right_mouth.png")
 				.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 		snake__right__mouth.paintIcon(this, g, snake__x__length[0], snake__y__length[0]);
 		
@@ -225,13 +225,13 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 			if (snake__y__length[snake__length - 2] == 0 &&
 					snake__y__length[snake__length - 1] == 700)
 			{
-				snake__up__tail = new ImageIcon(new ImageIcon("snake_up_tail.png")
+				snake__up__tail = new ImageIcon(new ImageIcon("asset/snake_up_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__up__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);	
 			}
 			else
 			{
-				snake__down__tail = new ImageIcon(new ImageIcon("snake_down_tail.png")
+				snake__down__tail = new ImageIcon(new ImageIcon("asset/snake_down_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__down__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);
 			}
@@ -243,13 +243,13 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 			if (snake__y__length[snake__length - 2] == 725 &&
 					snake__y__length[snake__length - 1] == 0)
 			{
-				snake__down__tail = new ImageIcon(new ImageIcon("snake_down_tail.png")
+				snake__down__tail = new ImageIcon(new ImageIcon("asset/snake_down_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__down__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);	
 			}
 			else
 			{
-				snake__up__tail = new ImageIcon(new ImageIcon("snake_up_tail.png")
+				snake__up__tail = new ImageIcon(new ImageIcon("asset/snake_up_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__up__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);
 			}
@@ -260,13 +260,13 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 			if (snake__x__length[snake__length - 2] == 0 &&
 					snake__x__length[snake__length - 1] == 975)
 			{
-				snake__left__tail = new ImageIcon(new ImageIcon("snake_left_tail.png")
+				snake__left__tail = new ImageIcon(new ImageIcon("asset/snake_left_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__left__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);	
 			}
 			else
 			{
-				snake__right__tail = new ImageIcon(new ImageIcon("snake_right_tail.png")
+				snake__right__tail = new ImageIcon(new ImageIcon("asset/snake_right_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__right__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);
 			}
@@ -277,13 +277,13 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 			if (snake__x__length[snake__length - 2] == 975 &&
 					snake__x__length[snake__length - 1] == 0)
 			{
-				snake__right__tail = new ImageIcon(new ImageIcon("snake_right_tail.png")
+				snake__right__tail = new ImageIcon(new ImageIcon("asset/snake_right_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__right__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);	
 			}
 			else
 			{
-				snake__left__tail = new ImageIcon(new ImageIcon("snake_left_tail.png")
+				snake__left__tail = new ImageIcon(new ImageIcon("asset/snake_left_tail.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 				snake__left__tail.paintIcon(this, g, snake__x__length[snake__length-1], snake__y__length[snake__length-1]);
 			}
@@ -293,41 +293,41 @@ public class Gameplay_2 extends JPanel implements KeyListener, ActionListener
 		{
 			if (a == 0 && right)
 			{
-				snake__right__mouth = new ImageIcon(new ImageIcon("snake_right_mouth.png")
+				snake__right__mouth = new ImageIcon(new ImageIcon("asset/snake_right_mouth.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
 				snake__right__mouth.paintIcon(this, g, snake__x__length[a], snake__y__length[a]);
 			}
 			
 			if (a == 0 && left)
 			{
-				snake__left__mouth = new ImageIcon(new ImageIcon("snake_left_mouth.png")
+				snake__left__mouth = new ImageIcon(new ImageIcon("asset/snake_left_mouth.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
 				snake__left__mouth.paintIcon(this, g, snake__x__length[a], snake__y__length[a]);
 			}
 			
 			if (a == 0 && up)
 			{
-				snake__up__mouth = new ImageIcon(new ImageIcon("snake_up_mouth.png")
+				snake__up__mouth = new ImageIcon(new ImageIcon("asset/snake_up_mouth.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
 				snake__up__mouth.paintIcon(this, g, snake__x__length[a], snake__y__length[a]);
 			}
 			
 			if (a == 0 && down)
 			{
-				snake__down__mouth = new ImageIcon(new ImageIcon("snake_down_mouth.png")
+				snake__down__mouth = new ImageIcon(new ImageIcon("asset/snake_down_mouth.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
 				snake__down__mouth.paintIcon(this, g, snake__x__length[a], snake__y__length[a]);
 			}
 			
 			if (a != 0)
 			{
-				snake__body = new ImageIcon(new ImageIcon("snake_body.png")
+				snake__body = new ImageIcon(new ImageIcon("asset/snake_body.png")
 						.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
 				snake__body.paintIcon(this, g, snake__x__length[a], snake__y__length[a]);
 			}
 		}
 		
-		object = new ImageIcon(new ImageIcon("enemy.png")
+		object = new ImageIcon(new ImageIcon("asset/enemy.png")
 				.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH)); 
 		if (snake__x__length[0] == object__x__pos[obj__x] && 
 			snake__y__length[0] == object__y__pos[obj__y])
